@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>About Me</title>
-    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: lightblue;
+            color: black;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .content {
+            width: 65%;
+        }
+        .image {
+            width: 30%;
+            text-align: right;
+        }
+        .image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        a {
+            color: darkblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body style="background-color:lightblue; color:black; font-family: Arial, sans-serif; padding: 30px;">
-    <h1>About Me</h1>
-    <p><strong>Name:</strong> Cheki Wangmo</p>
-    <p><strong>Email:</strong> chekiwangmo@gmail.com</p>
-    <p>I am pursuing BEd ICT. I feel anxious about learning web development but I am trying to build projects and improve my coding skills.</p>
-    <p><a href="{% url 'index' %}">Back to Journey</a></p>
+<body>
+    <div class="content">
+        <h1>About Me</h1>
+        <p><strong>Name:</strong> Cheki Wangmo</p>
+        <p><strong>Email:</strong> chekiwangmo@gmail.com</p>
+        <p>
+            I am currently pursuing a Bachelor of Education in ICT. 
+            Although I sometimes feel anxious about learning web development, 
+            I am determined to keep improving by working on projects and 
+            exploring new ideas. I love the process of learning, even when it’s challenging, 
+            because every small step helps me grow and build confidence in coding.
+        </p>
+        <p>
+            In the future, I aim to create educational websites and tools that make 
+            learning technology more accessible and enjoyable for students. 
+            My journey in web development is just beginning, but I’m excited 
+            about what lies ahead.
+        </p>
+        <p><a href="index.html">← Back to Journey</a></p>
+    </div>
+
+    <div class="image">
+        <img src="myphoto.jpg" alt="Cheki Wangmo">
+    </div>
 </body>
 </html>
